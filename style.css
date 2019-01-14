@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700');
+
+body{
+  width:1366px;
+  background-image: url("images/grids.png");
+  background-repeat: repeat;
+  font-family: 'Cousine', sans-serif;
+}
+
+h1{
+  width:1200px;
+  position: relative;
+  font-size:50px;
+  margin:0;
+  top:20px;
+  left:110px;
+}
+
+h2{
+  background-color: yellow;
+  padding:8px;
+}
+
+div{
+  height: 250px;
+  width: 800px;
+  background-color: yellow;
+  position: relative;
+  top:-5px;
+  left:100px;
+  z-index:-1;
+}
+
+.flex{
+  display:inline-flex;
+  position: relative;
+  padding:10px;
+  left:150px;
+  border-width: thin;
+  border-color: #f4bf42;
+}
+
+section{
+  width:1100px;
+  margin:0;
+  padding:10px;
+  padding-left:60px;
+  flex:1;
+}
+
+section ul, ol{
+  height:300px;
+  list-style-type: circle;
+  background-color: white;
+  border-color:black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+section li{
+  padding-top:10px;
+}
+
+footer nav{
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding-top: 5px;
+  margin-top: 16px;
+  padding-bottom: 0px;
+}
+
+footer nav ul{
+  background-color: blue;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+
+}
+
+a{
+  font-size: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color:blue;
+}
+
+footer a{
+  color: white;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+footer a:hover{
+  color: hotpink;
+}

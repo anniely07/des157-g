@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|VT323');
+
+body{
+  margin:auto;
+  width:50%;
+  font-family: 'VT323', sans-serif;
+}
+
+h1{
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+}
+
+p{
+  padding: 30px 30px 30px 43px;
+  position: absolute;
+  margin:5px;
+  left:45%;
+  height:80px;
+  width:300px;
+  background-image: url("images/textb.png");
+  background-repeat: no-repeat;
+
+}
+
+#flex{
+  display: flex;
+  padding-top:10px;
+  background-color: #FFDAB9;
+}
+
+img{
+  padding-top: 70px;
+  padding-left: 60px;
+  color:blue;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 60px;
+}
+
+label{
+  position: relative;
+  top:18px;
+  padding-left: 13px;
+}
+
+input{
+  width:200px;
+  margin-left: 80px;
+  border:0px;
+}
+
+input[type="text"]:focus{
+  background-color: antiquewhite;
+  color:black;
+}
+
+div{
+  display: flex;
+  padding-left: 80px;
+}
+
+input[type="reset"],input[type="submit"]{
+  width:80px;
+  margin-top:10px;
+  margin-left: 10px;
+  border:0px;
+  background-color:white;
+}
+
+
+footer{
+  position: fixed;
+}
+
+footer nav ul{
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+footer nav ul a{
+  padding: 5px;
+  color: #FFDAB9;
+}

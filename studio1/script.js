@@ -17,7 +17,7 @@ function processForm(evt){
   document.querySelector('#girl').src = 'images/euls4.gif';
 
   var msg=document.querySelector('#msg');
-  msg.innerHTML = greeting + ' ' + 'I\'m ' + name + '. For a living I ' + verb + ' ' + adj + ' ' + noun1 + 's. My favorite thing is ' + adj2 + ' ' + noun2 + 's. It\'s nice to meet you!';
+  msg.innerHTML = 'Oh, ' + greeting + ' ' + 'I\'m ' + name + '. For a living I ' + verb + ' ' + adj + ' ' + noun1 + 's. My favorite thing is ' + adj2 + ' ' + noun2 + 's. It\'s nice to meet you!';
 
   evt.preventDefault();
   return false;

@@ -1,44 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun:400,600');
+
 
 body{
-  font-family: sans-serif;
+  font-family: 'Sarabun',sans-serif;
   margin: auto;
   width:40em;
   background-color: rgba(236, 60, 110, 1);
 }
 
 header{
-  margin: auto;
-  width: 50%;
+  text-align: center;
+  font-size:.8em;
   color:rgb(67, 47, 211);
   color:white;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+
+}
+
+h2{
   text-align: center;
+  color:rgba(236, 60, 110, 1);
+}
+
+#wsclose, #pclose, #kclose{
+  position: absolute;
+  color:white;
+  top:0;
+  right:0;
 }
 
 #bag{
-  position: absolute;
-  bottom:0;
-  left:10%;
   z-index: -1;
+
+}
+
+#bag img{
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  padding-left: 15px;
+  max-width: 525px;
+  width: 100%;
+  height: auto;
 }
 
 #flex{
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: auto;
 }
 
-img{
-  padding: 8px;
-  padding-top: 100px;
+
+
+#kermit{
+  margin-left: 70px;
 }
 
-/**/
 #wsoverlay, #poverlay, #koverlay{
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px 50px 30px;
   position:absolute;
   top:20%;
   left:8%;
-  width:40em;
+  max-width: 35em;
+  width:100%;
+  margin: auto;
   height:20em;
   display:none;
 }
@@ -51,6 +79,9 @@ img{
   margin-top:10px;
   margin-bottom:10px;
   margin-left: 30px;
+  max-width: 200px;
+  width: 100%;
+  height:auto;
 }
 
 h2{
@@ -60,19 +91,12 @@ h2{
 }
 
 p{
+  font-size: .9em;
   padding:10px;
   position: absolute;
-  top:45%;
+  top:30%;
   left:45%;
-  width:20em;
-  margin:0;
-}
-
-div{
-  position: absolute;
-  color:white;
-  top:0;
-  right:0;
+  max-width:15em;
 }
 
 footer{
@@ -95,20 +119,37 @@ a{
   color:white;
 }
 
+
+
 @media only screen and (min-width:769px) {
   body{
     background-color: rgba(23, 226, 191, 1);
   }
 
-  #bag{
-    left:25%;
-    padding:0;
-    margin:0;
+  header{
+    padding-bottom: 50px;;
+  }
+
+  p{
+    max-width:50em;
+    left:40%;
+  }
+
+  #flex{
+    flex-wrap: nowrap;
+    margin-left: 0%;
+  }
+
+  #bag img{
+    padding-top: 10px;
+    max-width: 625px;
+    bottom:10%;
   }
 
   #wsoverlay, #poverlay, #koverlay{
     top:20%;
     left:30%;
+    max-width: 40em;
   }
 
   #woodstock img{
@@ -116,6 +157,7 @@ a{
   }
   #kermit img{
     margin-top: 80px;
+    margin-left: 0px;
   }
 }
 

@@ -23,7 +23,7 @@ rectangle.attr({
 
 //button
 var button = Snap("#button");
-Snap.load("https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/truck.svg",
+Snap.load("https://anniely07.github.io/des157-g/studio4/images/star.svg",
   onSVGLoaded);
 
 function onSVGLoaded(data) {

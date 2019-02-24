@@ -1,0 +1,44 @@
+body{
+  max-width:1368px;
+}
+
+#girl{
+  position: absolute;
+  bottom:10px;
+  left:540px;
+}
+
+#circle{
+  position: absolute;
+  left:840px;
+  bottom:100px;
+}
+
+#rect{
+  position: absolute;
+  left:740px;
+  bottom:300px;
+}
+
+#tri{
+  position: absolute;
+  left:540px;
+  bottom:200px;
+}
+
+#overlay{
+  display: none;
+}
+
+#p{
+  display: none;
+  position: absolute;
+  left:800px;
+  bottom:100px;
+}
+
+
+footer{
+  position: fixed;
+  bottom:0;
+}

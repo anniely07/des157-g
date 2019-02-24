@@ -27,10 +27,10 @@ Snap.load("https://anniely07.github.io/des157-g/studio4/images/star.svg",
   onSVGLoaded);
 
 function onSVGLoaded(data) {
-  truckY = data.select("#truckYeah");
-  textY = data.select("#textYeah");
-  button.append(truckY);
-  button.append(textY);
+  circleo = data.select("#circle");
+  star = data.select("#star");
+  button.append(circleo);
+  button.append(star);
 }
 
 
@@ -61,7 +61,7 @@ function hoverOverR() {
 }
 
 function hoverOverB() {
-  textY.animate({
+  star.animate({
     transform: 's3, t2, r5'}, 1000, mina.elastic);
 }
 
@@ -74,7 +74,7 @@ function hoverOut() {
   transform: ''}, 1000, mina.bounce);
   rectangle.animate({
     transform: ''}, 1000, mina.elastic);
-  textY.animate({
+  star.animate({
     transform: ''}, 1000, mina.easein);
 
 }

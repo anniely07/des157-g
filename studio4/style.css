@@ -15,25 +15,26 @@ h1{
 #girl{
   position: absolute;
   bottom:100px;
-  left:540px;
+  padding-left: 15px;
+  width: 100%;
 }
 
 #circle{
   position: absolute;
-  left:840px;
-  bottom:100px;
+  left:60%;
+  bottom:400px;
 }
 
 #rect{
   position: absolute;
-  left:740px;
-  bottom:300px;
+  left: 15%;
+  bottom:420px;
 }
 
 #button{
   position: absolute;
-  left:540px;
-  bottom:400px;
+  left:35%;
+  bottom:550px;
 }
 
 #bounce, #elastic, #easein{
@@ -43,21 +44,22 @@ h1{
 
 #bounce{
   position: absolute;
-  left:1040px;
-  bottom:200px;
+  left:65%;
+  bottom:450px;
 }
 
 #elastic{
   position: absolute;
-  left:940px;
-  bottom:400px;
+  left:20%;
+  bottom:450px;
 }
 
 #easein{
   position: absolute;
-  left:780px;
-  bottom:500px;
+  left:45%;
+  bottom:550px;
 }
+
 
 footer{
   position: fixed;
@@ -76,4 +78,47 @@ li{
 
 a{
   color: white;
+}
+
+
+@media only screen and (min-width: 769px) {
+  #girl{
+    bottom:100px;
+    left:35%;
+    padding-left:0;
+    width:auto;
+  }
+
+  #circle{
+    left:55%;
+    bottom:100px;
+    padding-left:20px;
+  }
+
+  #rect{
+    left:52%;
+    bottom:270px;
+    padding-left:20px;
+  }
+
+  #button{
+    left:40%;
+    bottom:400px;
+    padding-left:20px;
+  }
+
+  #bounce{
+    left:70%;
+    bottom:200px;
+  }
+
+  #elastic{
+    left:68%;
+    bottom:400px;
+  }
+
+  #easein{
+    left:60%;
+    bottom:500px;
+  }
 }

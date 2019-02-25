@@ -142,11 +142,11 @@ function hoverOut() {
 
 }
 
-circle.click(function(){
+button.click(function(){
 
-  circle.attr({
-    stroke: 'pink',
-    fill: 'pink',
+  circley.attr({
+    stroke: 'gold',
+    fill: 'gold',
   });
 
 

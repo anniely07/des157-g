@@ -23,17 +23,32 @@ rectangle.attr({
 
 //button
 var button = Snap("#button");
-Snap.load("https://anniely07.github.io/des157-g/studio4/images/star.svg",
+Snap.load("https://anniely07.github.io/des157-g/studio4/images/startwo.svg",
   onSVGLoaded);
 
 function onSVGLoaded(data) {
-  circleo = data.select("#circle");
+  circley = data.select("#circley");
   star = data.select("#star");
-  button.append(circleo);
+  button.append(circley);
   button.append(star);
+
+  star.attr({
+    fill: 'tomato',
+    stroke: 'cornflowerblue',
+    strokeOpacity: .3,
+    strokeWidth: 10,
+  });
+
+
+  circley.attr({
+    fill: 'cornflowerblue',
+    stroke: 'tomato',
+    strokeOpacity: .3,
+    strokeWidth: 10,
+    x:'100',
+  });
+
 }
-
-
 
 
 var overlay = document.querySelector('#overlay');
@@ -62,7 +77,7 @@ function hoverOverR() {
 
 function hoverOverB() {
   star.animate({
-    transform: 's3, t2, r5'}, 1000, mina.elastic);
+    transform: 's3, t0, r5'}, 1000, mina.elastic);
 }
 
 function hoverOut() {

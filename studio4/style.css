@@ -1,4 +1,5 @@
 body{
+  font-family: Arial;
   max-width:1368px;
 }
 
@@ -20,10 +21,12 @@ body{
   bottom:300px;
 }
 
-#tri{
-  position: absolute;
-  left:540px;
-  bottom:200px;
+#button{
+
+  margin-top: 20px;
+  background-color: khaki;
+    position: relative;
+  display: block;
 }
 
 #overlay{

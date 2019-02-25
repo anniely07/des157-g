@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body{
-  font-family: Arial;
+  font-family:'Poppins', sans-serif;
   max-width:1368px;
+  background-image: radial-gradient( circle farthest-corner at 0.3% 1.4%,  rgba(55,177,251,1) 0%, rgba(172,121,255,1) 100.7% );
+}
+
+h1{
+  text-align: center;
+  color:white;
+  padding-top: 20px;
 }
 
 #girl{
   position: absolute;
-  bottom:10px;
+  bottom:100px;
   left:540px;
 }
 
@@ -22,26 +31,49 @@ body{
 }
 
 #button{
-
-  margin-top: 20px;
-  background-color: khaki;
-    position: relative;
-  display: block;
-}
-
-#overlay{
-  display: none;
-}
-
-#p{
-  display: none;
   position: absolute;
-  left:800px;
-  bottom:100px;
+  left:540px;
+  bottom:400px;
 }
 
+#bounce, #elastic, #easein{
+  display: none;
+  color:white;
+}
+
+#bounce{
+  position: absolute;
+  left:1040px;
+  bottom:200px;
+}
+
+#elastic{
+  position: absolute;
+  left:940px;
+  bottom:400px;
+}
+
+#easein{
+  position: absolute;
+  left:780px;
+  bottom:500px;
+}
 
 footer{
   position: fixed;
   bottom:0;
+}
+
+ul{
+  display:flex;
+}
+
+li{
+  list-style-type: none;
+  padding-right: 8px;
+  font-size: 10px;
+}
+
+a{
+  color: white;
 }

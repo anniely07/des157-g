@@ -1,0 +1,67 @@
+body{
+  font-family: Arial;
+}
+
+#navigation{
+  display: none;
+  position: fixed;
+  right:0;
+}
+
+#zero{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 25%;
+}
+
+#down{
+  position: fixed;
+  bottom: 10px;
+  width: 50%
+}
+
+#one{
+  display:none;
+}
+
+#one p{
+  display:none;
+}
+
+.page:target{
+  display: block;
+}
+
+.page{
+  display:none;
+}
+
+/* #two{
+  display:none;
+}
+
+#three{
+  display:none;
+}
+
+#four{
+  display:none;
+}
+
+#five{
+  display:none;
+}
+
+#six{
+  display:none;
+}
+
+#seven{
+  display:none;
+} */
+
+footer{
+  position: fixed;
+  bottom: 0;
+}

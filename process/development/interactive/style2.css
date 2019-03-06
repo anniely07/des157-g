@@ -29,7 +29,7 @@ body{
   display:none;
 }
 
-.page:target{
+ .page:target{
   display: block;
 }
 
@@ -37,7 +37,8 @@ body{
   display:none;
 }
 
-/* #two{
+/*
+#two{
   display:none;
 }
 

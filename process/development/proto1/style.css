@@ -82,7 +82,7 @@ scroll-page {
 
 /*PAGE TWO*/
 #def{
-  position: absolute;
+  position: fixed;
   top:500px;
   right: 100px;
   display: none;

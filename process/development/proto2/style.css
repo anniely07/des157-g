@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:700');
+
+body {
+  font-family: 'Karla', sans-serif;
+  overflow:hidden;
+}
+
+#navigation{
+  display: none;
+  position: fixed;
+  right:5%;
+}
+
+header h2{
+  font-family: serif;
+  font-size: 14px;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+#pzeroc{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 25%;
+  height: 100%;
+  display: block;
+}
+
+.page {
+  /* setting height 100% for html, body, and for all pages makes each page full viewport */
+  height: 100%;
+  /* dirty hack to make text big and centered */
+  text-align: center;
+  color:#333;
+}
+
+.hidden {
+  display:none;
+}
+/*PAGE FOUR*/
+
+/*PAGE FIVE*/
+
+/*PAGE SIX*/
+
+/*PAGE SEVEN*/
+
+/*FOOTER*/
+footer{
+  position: fixed;
+  bottom: 0;
+  right:0;
+}
+
+footer nav ul{
+  display: flex;
+}
+
+li{
+  padding-left: 5px;
+  padding-right: 5px;
+}

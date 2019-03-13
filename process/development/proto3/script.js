@@ -1,18 +1,42 @@
 'user strict'
 console.log('reading js');
 
-
 var down = document.querySelector('#down');
-var topgone = document.querySelector('#one');
+var topgone = document.querySelector('#ponec');
 var def = document.querySelector('#def');
 var list = document.querySelector('#list');
 
 down.addEventListener('click',function(){
   navigation.style.display='block';
+  ponec.style.display='block;'
+  pzeroc.style.display='none';
 });
 
-//SNAP VARIABLES
+var pages = document.querySelectorAll(".page");
+var links = document.querySelectorAll("a");
 
+// bind event listener to each link by traversing the array called "links"
+for (var i=0; i<links.length; i++){
+ links[i].addEventListener('click', function(event){
+   console.log(event.currentTarget.id);
+
+   // hide all pages
+   hidePages();
+
+   // show the associated article by concatenating a '#' before and a c' after the event.currentTarget.id
+ document.querySelector('#' + event.currentTarget.id + 'c').classList.remove('hidden');
+ })
+}
+
+// function to hide all articles
+function hidePages() {
+  for (var i = 0; i < pages.length; i++) {
+    console.log('hide pages');
+    pages[i].classList.add("hidden");
+  }
+}
+
+//SNAP VARIABLES
 
 //PAGE ONE
 var go = Snap("#go");
@@ -39,39 +63,16 @@ china.attr({
   strokeWidth: 10,
 });
 
-var girl = Snap('#girl');
-
 //PAGE TWO
 var chinese = Snap("#chinese");
 chinese.attr({
   fill: '#f44256'
 });
 var american = Snap("#american");
-american.attr({
-  fill: '#66C4BB'
-});
 
 //PAGE THREE
 var as = Snap("#as");
 
-//PAGE FOUR
-var c1 = Snap("#circle");
-var circle = c1.circle(150,150,50);
-circle.attr({
-  fill: '#f44256',
-});
-
-var c2 = Snap("#circle2");
-var circle2 = c2.circle(150,150,50);
-circle2.attr({
-  fill: '#f44256',
-});
-
-var c3 = Snap("#circle3");
-var circle3 = c3.circle(150,150,50);
-circle3.attr({
-  fill: '#f44256',
-});
 
 //CALL FUNCTIONS
 go.hover(hoverOver, hoverOut);
@@ -80,11 +81,6 @@ to.hover(hoverOverto, hoverOut);
 china.hover(hoverOverchina, hoverOut);
 american.hover(hoverOveramerican, hoverOut);
 as.hover(hoverOveras, hoverOut);
-girl.hover(hoverOverg, hoverOut);
-c1.hover(hoverOverc1,hoverOut);
-c2.hover(hoverOverc2,hoverOut);
-c3.hover(hoverOverc3,hoverOut);
-
 
 //DEFINE FUNCTIONS
 
@@ -121,13 +117,9 @@ function hoverOverchina() {
     transform: 's3, t1, r0'}, 1000, mina.bounce);
 }
 
-function hoverOverg() {
-  not.style.display='block';
-}
-
 function hoverOveramerican() {
   american.attr({
-    fill: 'white',
+    fill: 'blue',
   });
   def.style.display='block';
 }
@@ -137,30 +129,6 @@ function hoverOveras() {
     fill: '#f44256',
   });
   list.style.display='block';
-}
-
-function hoverOverc1() {
-  circle.attr({
-    fill: '#66C4BB',
-  });
-  circle.animate({
-    transform: 's2, t2, r2'}, 1000, mina.elastic);
-}
-
-function hoverOverc2() {
-  circle2.attr({
-    fill: '#66C4BB',
-  });
-  circle2.animate({
-    transform: 's2, t2, r2'}, 1000, mina.elastic);
-}
-
-function hoverOverc3() {
-  circle3.attr({
-    fill: '#66C4BB',
-  });
-  circle3.animate({
-    transform: 's2, t2, r2'}, 1000, mina.elastic);
 }
 
 
@@ -191,27 +159,8 @@ function hoverOut() {
   transform: ''}, 1000, mina.bounce);
 
   american.attr({
-    fill: '#66C4BB',
+    fill: 'black',
   });
   def.style.display='none';
-
-  circle.attr({
-    fill: '#f44256',
-  });
-  circle.animate({
-  transform: ''}, 1000, mina.elastic);
-
-  circle2.attr({
-    fill: '#f44256',
-  });
-  circle2.animate({
-  transform: ''}, 1000, mina.elastic);
-
-  circle3.attr({
-    fill: '#f44256',
-  });
-  circle3.animate({
-  transform: ''}, 1000, mina.elastic);
-
-
+  list.style.display='none';
 }

@@ -115,10 +115,34 @@ scroll-page {
 /*PAGE FOUR*/
 
 /*PAGE FIVE*/
+#five{
+  background: linear-gradient(70deg, #f44256 50%, #0000 50%);
+}
+
+#five h1{
+  color: white;
+  padding-top: 300px;
+  padding-left: 300px;
+}
+
+#five p{
+  width:500px;
+  /* text-align: center; */
+  position: relative;
+  left:50%;
+
+}
 
 /*PAGE SIX*/
-
+#six p{
+  width:400px;
+  text-align: center;
+}
 /*PAGE SEVEN*/
+#seven p{
+  width:400px;
+  text-align: center;
+}
 
 /*FOOTER*/
 footer{

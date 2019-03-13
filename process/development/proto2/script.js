@@ -213,5 +213,4 @@ function hoverOut() {
   circle3.animate({
   transform: ''}, 1000, mina.elastic);
 
-
 }

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:700');
+
+body {
+  font-family: 'Karla', sans-serif;
+  overflow:hidden;
+}
+
+#navigation{
+  display: none;
+  position: fixed;
+  right:5%;
+  font-size:25px;
+}
+
+header h2{
+  /* font-family: serif; */
+  font-size: 14px;
+}
+
+li{
+  list-style-type: none;
+}
+
+scroll-container {
+  display: block;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+scroll-container {
+  display: block;
+  width: 100%;
+  height: 1000px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: block;
+  width:100%;
+  height: 100%;
+  padding-top:.5em;
+
+  /* align-items: center;
+  justify-content: center; */
+}
+
+#zero{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 25%;
+  height: 100%;
+}
+
+
+/*PAGE ONE*/
+#one{
+  background-color: #f44256;
+  font-size: 1.2em;
+}
+
+#go{
+  padding-top: 2em;
+  margin-left: 5em;
+}
+
+#back{
+  margin-left: 8em;
+}
+
+#to{
+  margin-left: 11em;
+}
+
+#china{
+  margin-left: 14em;
+}
+
+#one div{
+  height:20px;
+}
+
+#one p{
+  text-align: center;
+  display: none;
+  padding: 0;
+  margin:0;
+}
+
+#girl{
+ position: relative;
+ top: 50px;
+ left:550px;
+}
+
+/*PAGE TWO*/
+#two{
+  background: linear-gradient(to left, #66C4BB 50%, white 50%);
+}
+
+#def{
+  position: relative;
+  left: 850px;
+  display: none;
+}
+
+/*PAGE THREE*/
+#three{
+  background-image: url("images/bg.svg");
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+#list{
+  background-color: #f44256;
+  width:400px;
+  padding:20px;
+  font-size: 20px;
+  text-align: center;
+  list-style: inside;
+  position: relative;
+  left:-501px;
+  /* display: none; */
+
+}
+/*PAGE FOUR*/
+#circle{
+  position: relative;
+  bottom:200px;
+  left:100px;
+}
+
+#circle2{
+  position: relative;
+  bottom:200px;
+  left:100px;
+}
+
+#circle3{
+  position: relative;
+  bottom:200px;
+  left:100px;
+
+}
+
+
+#culture{
+  /* position: relative; */
+}
+
+#career{
+
+}
+
+#race{
+
+}
+
+
+/*PAGE FIVE*/
+#five{
+  background: linear-gradient(70deg, #f44256 50%, #0000 50%);
+}
+
+#five h1{
+  color: white;
+  padding-top: 300px;
+  padding-left: 250px;
+}
+
+#five p{
+  width:500px;
+  /* text-align: center; */
+  position: relative;
+  left:55%;
+
+}
+
+/*PAGE SIX*/
+#six{
+  background: linear-gradient(90deg, #0000 25%, #f44256 25%);
+}
+
+#six p{
+  width:400px;
+  text-align: center;
+}
+/*PAGE SEVEN*/
+#seven{
+  background: linear-gradient(70deg, #0000 50%, #f44256 50%);
+}
+
+#seven p{
+  color:white;
+  width:400px;
+  position: relative;
+  left:55%;
+}
+
+/*FOOTER*/
+footer{
+  position: fixed;
+  bottom: 0;
+  right:0;
+}
+
+footer nav ul{
+  display: flex;
+}
+
+li{
+  padding-left: 5px;
+  padding-right: 5px;
+}

@@ -182,10 +182,17 @@ scroll-page {
   background: linear-gradient(90deg, #0000 25%, #f44256 25%);
 }
 
-#six p{
-  width:400px;
-  text-align: center;
+#six h1{
+  padding-top: 300px;
 }
+
+#six p{
+  position: relative;
+  width: 800px;
+  left:400px;
+  color: white;
+}
+
 /*PAGE SEVEN*/
 #seven{
   background: linear-gradient(70deg, #0000 50%, #f44256 50%);
@@ -194,9 +201,21 @@ scroll-page {
 #seven p{
   color:white;
   width:400px;
+}
+
+#first{
   position: relative;
   left:55%;
+  top:20%;
 }
+
+#second{
+  position: relative;
+  left:55%;
+  display:none;
+}
+
+/*EIGHT*/
 
 /*FOOTER*/
 footer{
